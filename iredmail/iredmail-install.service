@@ -1,0 +1,12 @@
+[Unit]
+Description=iRedMail Install
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/iredmail/iredmail.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
