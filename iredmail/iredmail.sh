@@ -76,6 +76,7 @@ iredmail() {
         /usr/bin/systemctl enable amavisd.service
         /usr/bin/systemctl enable uwsgi.service
         /usr/bin/systemctl enable rsyslog.service
+        /usr/bin/systemctl enable crond.service
         # run services
         /usr/bin/systemctl start mariadb.service
         /usr/bin/systemctl start postfix.service
@@ -88,6 +89,7 @@ iredmail() {
         /usr/bin/systemctl start amavisd.service
         /usr/bin/systemctl start uwsgi.service
         /usr/bin/systemctl start rsyslog.service
+        /usr/bin/systemctl start crond.service
         # remove iredmail install script
         /usr/bin/systemctl disable iredmail-install.service
         /usr/bin/systemctl stop iredmail-install.service
