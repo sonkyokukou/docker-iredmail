@@ -28,16 +28,16 @@ Another alternatively, you can build an image directly from Github:
 
 ### Create and running a container
 
-** IMPORTANT: edit the iredmail.cfg file with your settings you prefer. **
+**IMPORTANT: edit the iredmail.cfg file and change domain and password.**
 
 **Create container:**
 
 ``` docker create --privileged -it --restart=always -p 80:80 -p 443:443 -p 25:25 -p 587:587 -p 110:110 -p 143:143 -p 993:993 -p 995:995 -h your_domain.com --name iredmail zokeber/iredmail ```
 
-**Another way to start an iredmail container:**
-
-``` docker run --privileged -it --restart=always -p 80:80 -p 443:443 -p 25:25 -p 587:587 -p 110:110 -p 143:143 -p 993:993 -p 995:995 -h your_domain.com --name iredmail zokeber/iredmail ```
-
 **Start container:**
 
 ``` docker start iredmail ```
+
+**Another way to create and start a container:**
+
+``` docker run --privileged -it --restart=always -p 80:80 -p 443:443 -p 25:25 -p 587:587 -p 110:110 -p 143:143 -p 993:993 -p 995:995 -h your_domain.com --name iredmail zokeber/iredmai
