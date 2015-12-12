@@ -38,6 +38,7 @@ Another alternatively, you can build an image directly from Github:
 
 ``` docker start iredmail ```
 
+
 **Another way to create and start a container:**
 
-``` docker run --privileged -it --restart=always -p 80:80 -p 443:443 -p 25:25 -p 587:587 -p 110:110 -p 143:143 -p 993:993 -p 995:995 -h your_domain.com --name iredmail zokeber/iredmai
+``` docker run --privileged -it --restart=always -p 80:80 -p 443:443 -p 25:25 -p 587:587 -p 110:110 -p 143:143 -p 993:993 -p 995:995 -h your_domain.com --name iredmail zokeber/iredmai ```
