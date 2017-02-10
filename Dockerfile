@@ -22,7 +22,7 @@ FROM zokeber/centos
 MAINTAINER Daniel Lopez Monagas <zokeber@gmail.com>
 
 # Env
-ENV IREDMAIL_VERSION 0.9.2
+ENV IREDMAIL_VERSION 0.9.6
 ENV container docker
 
 # Install packages necessary:
